@@ -56,199 +56,201 @@
 
 		<div id="content"> <!-- content seperator --> <!--div content-->
 
-				<form action="mailto:w1492046@my.westminster.ac.uk"> <!--form will mail to specified address-->
-			
-					<div id="pdetails"> <!--div for personal details-->
+			<form action="mailto:w1492046@my.westminster.ac.uk"> <!--form will mail to specified address-->
+		
+				<div id="pdetails"> <!--div for personal details-->
 
-							<fieldset> <!--group for elements related to personal details-->
+					<fieldset> <!--group for elements related to personal details-->
 
-								<legend> <!--fieldset name-->
-									Personal Details
-								</legend>
+						<legend> <!--fieldset name-->
+							Personal Details
+						</legend>
+						
+							<p> <!--scrollable list to choose title-->
+								<label for="title">
+									Please Select your title: 
+								</label>
+									<select name="title" id="title"> <!--make options selectable-->
+
+										<option value="mr" selected>
+											Mr
+										</option>
+
+										<option value="mrs">
+											Mrs
+										</option>
+
+										<option value="ms">
+											Ms
+										</option>
+
+										<option value="miss">
+											Miss
+										</option>
+
+										<option value="master">
+											Master
+										</option>
+
+									</select>
+							</p>
+
+							<p> <!--input for forename-->							
+								<label for="forename">
+									Forename:
+								</label>
+									<input type="text" id="forename" autofocus>
+							</p>
 								
-									<p> <!--scrollable list to choose title-->
-										<label for="title">
-											Please Select your title: 
-										</label>
-											<select name="title" id="title"> <!--make options selectable-->
+								<br>
 
-												<option value="mr" selected>
-													Mr
-												</option>
+							<p> <!--input for surname-->								
+								<label for="surname">
+									Surname:
+								</label>
+									<input type="text" id="surname">
+							</p>
 
-												<option value="mrs">
-													Mrs
-												</option>
+								<img src="./images/note.png" alt="">
 
-												<option value="ms">
-													Ms
-												</option>
+					</fieldset>
+					
+				</div>
 
-												<option value="miss">
-													Miss
-												</option>
+				<div id="questions"> <!--div for contact details-->
 
-												<option value="master">
-													Master
-												</option>
+					<fieldset> <!--group for elements related to contact details-->
+					
+						<legend> <!--fieldset name-->
+							Questions
+						</legend>
 
-											</select>
-									</p>
+						<p> <!--input for address-->
+							<label for="comments">
+								What do you think of the site?
+							</label>
+								<textarea id="comments" cols="30" rows="5">
+									
+								</textarea>
+						</p>
 
-									<p> <!--input for forename-->							
-										<label for="forename">
-											Forename:
-										</label>
-											<input type="text" id="forename" autofocus>
-									</p>
+						<p> <!--input for home number-->
+							<label for="aboutus">
+								How did you hear about us?
+							</label>
+								<select id="aboutus"> <!--make options selectable-->
+
+										<option value="ad" selected>
+											Advertisment
+										</option>
+
+										<option value="web">
+											Website
+										</option>
+
+										<option value="wom">
+											Word of mouth
+										</option>
+
+										<option value="accclick">
+											Accidentally clicked
+										</option>
+
+										<option value="pgjump">
+											Page jumping
+										</option>
+
+										<option value="other">
+											Other
+										</option>
+
+								</select>
+						</p>
+
+							<img src="./images/note.png" alt="">							
+
+					</fieldset>
+							
+				</div>
+
+				<div id="rating"> <!--div for rating-->
+			
+					<fieldset> <!--group for elements related to rating-->
+					
+						<legend> <!--fieldset name-->
+							Rate us!
+						</legend>
+
+							<p>
+								<label for="rate"> <!--radio button input to rate site-->
+									How would you rate the site out of 5?
+
+										<br>
+										<br>
+										<br>
+										<br>
+										<br>
+										<br>
+
+								</label>
+							</p>
+
+								<input type="radio" value="0" id="rate">
+									0
+										<br>
+
+								<input type="radio" name="acctype" value="1">
+									1
+										<br>
+
+								<input type="radio" name="acctype" value="2">
+									2
+										<br>
+
+								<input type="radio" name="acctype" value="3">
+									3
+										<br>
+
+								<input type="radio" name="acctype" value="4">
+									4
+										<br>
+
+								<input type="radio" name="acctype" value="5">
+									5
+
+
+							<p> <!--email input-->
+								<label for="email">
+									Enter email address:
+								</label>
+									<input type="email" id="email">
+							</p>
+
+										<br>
+							
+							<p class="check">
+								<input type="checkbox" name="offers"> <!--check box to 'opt-in'-->
+									Would you like to receive emails from us?
+
+										<br>
+
+								<input type="checkbox" name="agree" required> <!--checkbox for terms and conditions-->
+									Do you agree to our terms and conditions?
+							</p>
+
+								<img src="./images/note.png" alt="">
 										
 										<br>
 
-									<p> <!--input for surname-->								
-										<label for="surname">
-											Surname:
-										</label>
-											<input type="text" id="surname">
-									</p>
+								<button type="reset" value="Reset">Reset</button> <!--button to reset form-->
 
-										<img src="./images/note.png" alt="">
-
-							</fieldset>
-						
-					</div>
-
-					<div id="questions"> <!--div for contact details-->
-
-							<fieldset> <!--group for elements related to contact details-->
-							
-								<legend> <!--fieldset name-->
-									Contact Details
-								</legend>
-
-								<p> <!--input for address-->
-									<label for="comments">
-										What do you think of the site?
-									</label>
-										<textarea id="comments" cols="30" rows="5">
-											
-										</textarea>
-								</p>
-
-								<p> <!--input for home number-->
-									<label for="aboutus">
-										How did you hear about us?
-									</label>
-										<select id="aboutus"> <!--make options selectable-->
-
-												<option value="ad" selected>
-													Advertisment
-												</option>
-
-												<option value="web">
-													Website
-												</option>
-
-												<option value="wom">
-													Word of mouth
-												</option>
-
-												<option value="accclick">
-													Accidentally clicked
-												</option>
-
-												<option value="pgjump">
-													Page jumping
-												</option>
-
-											</select>
-								</p>
-
-									<img src="./images/note.png" alt="">							
-
-							</fieldset>
-								
-					</div>
-
-					<div id="rating"> <!--div for rating-->
-					
-							<fieldset> <!--group for elements related to rating-->
-							
-								<legend> <!--fieldset name-->
-									Rate us!
-								</legend>
-
-									<p>
-										<label for="rate"> <!--radio button input to rate site-->
-											How would you rate the site out of 5?
-
-												<br>
-												<br>
-												<br>
-												<br>
-												<br>
-												<br>
-
-										</label>
-									</p>
-
-										<input type="radio" value="0" id="rate">
-											0
-												<br>
-
-										<input type="radio" name="acctype" value="1">
-											1
-												<br>
-
-										<input type="radio" name="acctype" value="2">
-											2
-												<br>
-
-										<input type="radio" name="acctype" value="3">
-											3
-												<br>
-
-										<input type="radio" name="acctype" value="4">
-											4
-												<br>
-
-										<input type="radio" name="acctype" value="5">
-											5
-
-
-									<p> <!--email input-->
-										<label for="email">
-											Enter email address:
-										</label>
-											<input type="email" id="email">
-									</p>
-
-												<br>
+								<button type="submit" value="Submit">Submit</button> <!--button to submit form-->
 									
-									<p class="check">
-										<input type="checkbox" name="offers"> <!--check box to 'opt-in'-->
-											Would you like to receive emails from us?
+					</fieldset>
 
-												<br>
+				</div>
 
-										<input type="checkbox" name="agree" required> <!--checkbox for terms and conditions-->
-											Do you agree to our terms and conditions?
-									</p>
-
-										<img src="./images/note.png" alt="">
-												
-												<br>
-
-										<button type="reset" value="Reset">Reset</button> <!--button to reset form-->
-
-										<button type="submit" value="Submit">Submit</button> <!--button to submit form-->
-											
-							</fieldset>
-
-					</div>
-
-
-
-				</form>
+			</form>
 
 		</div>
 
