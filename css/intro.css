@@ -1,0 +1,53 @@
+/* CSS Document */
+@charset "UTF-8";
+
+header style
+header {
+	background-color: rgba(47,47,47,0);
+	height: 15%;
+	min-height: 15%;
+	width: 100%;
+}
+
+h1 {
+	color: #31d120;
+	text-align: center;
+}
+/* end of header style */
+
+/* content style */
+#content {
+	background-color: rgba(47,47,47, .65);
+	color: #31d120;
+	font-family: "AleksandraC";
+	height: 60%;
+	margin-left: 10%;
+	margin-right: 10%;
+	min-height: 60%;
+	text-align: center;
+}
+
+.rq, .nm, .cs, .er  {
+	background-color: rgba(255,255,255, .1);
+	display: inline-block;
+	height: 200px;
+	margin: 3%;
+	padding: 2%;
+	width: 200px;
+}
+
+img {
+	height: 150px;
+	margin-top: 5px; 
+	width: 150px;
+}
+/* end of content style */
+
+/* footer style */
+footer {
+	background-color: rgba(47,47,47,0);
+	height: 15%;
+	min-height: 15%;
+	width: 100%;
+}
+/* end of footer style */

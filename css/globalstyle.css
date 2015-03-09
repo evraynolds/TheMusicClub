@@ -1,0 +1,144 @@
+/* CSS Document */
+@charset "UTF-8";
+
+@import "http://webfonts.ru/import/alegreyasc.css";
+/*
+	Alegreya Sans SC, 100, 100 italic, 300, 300 italic, 400, 400 italic, 500, 500 italic, 700, 700 italic, 800, 800 italic, 900, 900 italic
+	Font for all headers and footers
+*/
+
+@import "http://webfonts.ru/import/aliquam.css";
+/*
+	Aliquam, 200, 200 italic, 400, 400 italic
+	Font for navigation
+*/
+
+@import "http://webfonts.ru/import/aleksandrac.css";
+/*
+	AleksandraC, 400
+	Font for content
+*/
+
+/* entire document style */
+html, body {
+	height: 100%; 
+	width: 100%;
+}
+
+body {
+	background-attachment: fixed;
+	background-image: url("../images/grey_wall.png");
+    background-repeat: no-repeat;
+	margin: 0;
+	padding: 0;
+}
+/* end of document style */
+
+/* header style */
+header {
+	background-color: rgba(47,47,47, .85);
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	color: #31d120;
+	font-family: "Alegreya Sans SC";
+	height: 55px;
+	top: 0;
+	width: 100%;
+}
+
+header .textspace {
+	padding-left: 12px;
+	padding-right: 12px;
+	text-align: center;
+}
+
+h1 {
+	margin-top: 0;
+	padding-top: 8px;
+}
+/* end of header style */
+
+/* navigation */
+nav { 
+   	background-color: rgba(0, 0, 0, 0);
+   	float: right; 
+   	font-family: "Aliquam";
+   	font-weight: bold;
+   	height: inherit;
+   	margin-left: 1%;
+   	margin-top: 20px;
+   	text-transform: uppercase;
+   	width: 20%;
+   	z-index: 1;
+}
+
+nav ul { 
+	list-style: none;  
+	margin: 0; 
+	margin-right: 20px;
+	padding: 0;  
+}
+
+nav ul li { 
+	background-color: rgba(47,47,47, .85);
+	border-bottom: 2px solid #31d120; 
+   	border-bottom-left-radius: 10px; 
+	display: inline-block;
+	padding: 10px;
+	width: 100%; 
+}
+
+nav ul li:hover { 
+	background-color: rgba(30,30,30, .85);
+	border-left: 2px solid #31d120;
+}
+
+nav ul li:active { 
+	background-color: #2f2f2f; 
+}
+
+nav a { 
+	color: #eaeaea;
+	display: inline-block;
+	text-decoration: none; 
+	width: 100%; 
+}
+
+nav a:hover { background-color: transparent; }
+
+/* end of navigation */
+
+/* wrap style */
+#wrap {
+	height: auto !important;
+   	height: 100%;
+   	margin-left: 2%;
+	min-height: 100%;
+	position: relative;
+	width: 75%;
+	z-index: -1;
+}
+/* end of wrap style */
+
+#content {
+	font-family: "AleksandraC";
+}
+
+/* footer style */
+footer {
+	background-color: rgba(47,47,47, .85);
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	color: #31d120;
+	font-family: "Alegreya Sans SC";
+	margin-bottom: -55px;
+	min-height: 55px;
+	width: 100%;
+}
+
+footer .textspace {
+	font-size: 14pt;
+	padding-top: 4px;
+	text-align: center;
+}
+/* end of footer style */

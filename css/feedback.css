@@ -1,0 +1,58 @@
+/* CSS Document */
+@charset "UTF-8";
+
+/* content settings */
+#content {
+	background-color: rgba(47,47,47, .85);
+	border-radius: 30px;
+	color: #31d120;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 20px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+/* end of content settings */
+
+/* start of form style */
+#pdetails, #questions, #rating {
+	background-color: rgba(255,255,255,.1);
+	border-radius: 3px;
+	margin-top: 10px;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding: 5px;
+	padding-bottom: 10px;
+}
+
+#pdetails img, #questions img, #rating img {
+	height: 50px;
+	width: 50px;
+	margin-bottom: -9px;
+	margin-right: -8px;
+	float: right;
+}
+
+#content .check {
+	color: #31d120;
+}
+
+fieldset {
+	border-color: #31d120;
+}
+
+legend {
+	color: #31d120;
+}
+
+label {
+	display: inline-block;
+	float: left;
+	width: 300px;
+}
+
+input {
+	display: inline-block;
+	float: left;
+}
+/* end of form style */

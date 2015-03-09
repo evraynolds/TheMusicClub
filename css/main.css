@@ -1,0 +1,22 @@
+/* CSS Document */
+@charset "UTF-8";
+
+/* header style */
+header {
+	
+}
+/* end of header style */
+
+/* content style */
+#content {
+	background-color: rgba(255,255,255, .1);
+	color: #31d120;
+	height: inherit;
+	margin-top: 20px;
+	width: 98%;
+}
+
+#content .textspace {
+	padding: 20px;
+}
+/* end of content style */
