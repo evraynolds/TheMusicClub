@@ -34,6 +34,30 @@ body {
 }
 /* end of document style */
 
+/* progress bar style */
+#progressbar{
+  position: absolute;
+  width: 100%;
+}
+
+#loading{
+  height: 2px;
+  width: 100%;
+  border-radius: 10px;
+  background: #31d120;
+  position: absolute;
+  display: inline-block;
+  animation: load 3s ease;
+}
+
+@keyframes load{
+  0%{
+    background: transparent;
+    width: 2%;
+  }
+}
+/* end of progress bar style */
+
 /* header style */
 header {
 	background-color: rgba(47,47,47, .85);
@@ -41,7 +65,7 @@ header {
 	border-bottom-right-radius: 30px;
 	color: #31d120;
 	font-family: "Alegreya Sans SC";
-	height: 120px;
+	height: 100px;
 	top: 0;
 	width: 100%;
 }
@@ -59,9 +83,8 @@ h1 {
 /* end of header style */
 
 /* navigation */
-
 nav {
-	
+	margin-top: -20px;
 }
 
 nav ul {
@@ -88,11 +111,12 @@ nav ul li:hover {
 }
 
 nav ul li a {
-	color: #31d120;
+	color: #ffffff;
 	text-decoration: none;
 }
 
 nav a {
+	font-size: 18px;
 	padding-left: 5px;
 	padding-right: 5px;
 }
@@ -107,7 +131,7 @@ nav a {
    	margin-right: 2%;
    	margin-top: 20px;
 	position: relative;
-	width: 96%;
+	width: 98%;
 }
 /* end of wrap style */
 
