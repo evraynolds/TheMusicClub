@@ -41,7 +41,7 @@ header {
 	border-bottom-right-radius: 30px;
 	color: #31d120;
 	font-family: "Alegreya Sans SC";
-	height: 55px;
+	height: 120px;
 	top: 0;
 	width: 100%;
 }
@@ -59,64 +59,55 @@ h1 {
 /* end of header style */
 
 /* navigation */
-nav { 
-   	background-color: rgba(0, 0, 0, 0);
-   	float: right; 
-   	font-family: "Aliquam";
-   	font-weight: bold;
-   	height: inherit;
-   	margin-left: 1%;
-   	margin-top: 20px;
-   	text-transform: uppercase;
-   	width: 20%;
-   	z-index: 1;
+
+nav {
+	
 }
 
-nav ul { 
-	list-style: none;  
-	margin: 0; 
-	margin-right: 20px;
-	padding: 0;  
+nav ul {
+	height: 40px;
+	margin-left: 2%;
+	margin-right: 2%;
+	width: 92%;
+} 
+
+nav ul li {
+	float: left;
+	list-style: none;
+	margin-right: 15px;
+	margin-top: 10px;
+	border-left: 2px solid transparent;
+	border-right: 2px solid transparent;
 }
 
-nav ul li { 
-	background-color: rgba(47,47,47, .85);
-	border-bottom: 2px solid #31d120; 
-   	border-bottom-left-radius: 10px; 
-	display: inline-block;
-	padding: 10px;
-	width: 100%; 
-}
-
-nav ul li:hover { 
-	background-color: rgba(30,30,30, .85);
+nav ul li:hover {
+	background-color: rgba(255,255,255, 0.1);
 	border-left: 2px solid #31d120;
+	border-right: 2px solid #31d120;
+	
 }
 
-nav ul li:active { 
-	background-color: #2f2f2f; 
+nav ul li a {
+	color: #31d120;
+	text-decoration: none;
 }
 
-nav a { 
-	color: #eaeaea;
-	display: inline-block;
-	text-decoration: none; 
-	width: 100%; 
+nav a {
+	padding-left: 5px;
+	padding-right: 5px;
 }
-
-nav a:hover { background-color: transparent; }
-
 /* end of navigation */
 
 /* wrap style */
 #wrap {
+	float: left;
 	height: auto !important;
    	height: 100%;
    	margin-left: 2%;
-	min-height: 100%;
+   	margin-right: 2%;
+   	margin-top: 20px;
 	position: relative;
-	width: 75%;
-	z-index: -1;
+	width: 96%;
 }
 /* end of wrap style */
 
@@ -124,7 +115,7 @@ nav a:hover { background-color: transparent; }
 	font-family: "AleksandraC";
 }
 
-/* footer style */
+/* footer style
 footer {
 	background-color: rgba(47,47,47, .85);
 	border-top-left-radius: 30px;
@@ -141,4 +132,4 @@ footer .textspace {
 	padding-top: 4px;
 	text-align: center;
 }
-/* end of footer style */
+end of footer style */
