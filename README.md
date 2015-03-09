@@ -3,4 +3,6 @@ This is a repository for all of us to uplaod the work we do and collate it toget
 
 
 
-Please use the template for all your pages, otherwise rodrigo would be an unhappy bunny! :(
+Please use the template for all your pages, otherwise Rodrigo & Niral will be unhappy! :(
+
+The template is to keep all the pages to the same standard
