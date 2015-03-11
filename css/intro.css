@@ -1,12 +1,11 @@
 /* CSS Document */
 @charset "UTF-8";
 
-header style
+/* header style */
 header {
 	background-color: rgba(47,47,47,0);
 	height: 15%;
 	min-height: 15%;
-	width: 100%;
 }
 
 h1 {

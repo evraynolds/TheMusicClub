@@ -12,8 +12,7 @@
 		Feedback
 	</title>
 
-	<script>
-
+	<script src="./js/feedback.js">
 	</script>
 
 	<link rel="stylesheet" href="./css/globalstyle.css"> <!-- call global stylesheet -->
@@ -192,6 +191,10 @@
 								How would you rate the site out of 5?
 
 								<br>
+
+								(0 being the lowest, 5 being the highest)
+
+								<br>
 								<br>
 								<br>
 								<br>
@@ -201,27 +204,27 @@
 							</label>
 						</p>
 
-						<input type="radio" value="0" id="rate">
+						<input type="radio" name = "rate" value="0">
 						0
 						<br>
 
-						<input type="radio" name="acctype" value="1">
+						<input type="radio" name="rate" value="1">
 						1
 						<br>
 
-						<input type="radio" name="acctype" value="2">
+						<input type="radio" name="rate" value="2">
 						2
 						<br>
 
-						<input type="radio" name="acctype" value="3">
+						<input type="radio" name="rate" value="3">
 						3
 						<br>
 
-						<input type="radio" name="acctype" value="4">
+						<input type="radio" name="rate" value="4">
 						4
 						<br>
 
-						<input type="radio" name="acctype" value="5">
+						<input type="radio" name="rate" value="5">
 						5
 
 
@@ -235,12 +238,12 @@
 						<br>
 
 						<p class="check">
-							<input type="checkbox" name="offers"> <!--check box to 'opt-in'-->
+							<input type="checkbox" name="offers" id="offers"> <!--check box to 'opt-in'-->
 							Would you like to receive emails from us?
 
 							<br>
 
-							<input type="checkbox" name="agree" required> <!--checkbox for terms and conditions-->
+							<input type="checkbox" name="agree" id="agree" required> <!--checkbox for terms and conditions-->
 							Do you agree to our terms and conditions?
 						</p>
 
@@ -250,7 +253,7 @@
 
 						<button type="reset" value="Reset">Reset</button> <!--button to reset form-->
 
-						<button type="submit" value="Submit">Submit</button> <!--button to submit form-->
+						<button type="submit" value="Submit" onclick="submitAndCheck(this.form)">Submit</button> <!--button to submit form-->
 
 					</fieldset> <!-- end of group rating -->
 
