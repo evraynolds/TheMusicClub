@@ -78,13 +78,16 @@ header .textspace {
 
 header .cdspin img {
 	-webkit-animation-name: spin;
-	-webkit-animation-duration: 125ms;
+	-webkit-animation-duration: 2000ms;
 	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
 	-moz-animation-name: spin;
-	-moz-animation-duration: 125ms;
+	-moz-animation-duration: 2000ms;
 	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
 	float: left;
 	height: 60px;
+	margin-left: 7px;
 	margin-top: 15px;
 	width: 60px;
 }
