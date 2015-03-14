@@ -1,7 +1,7 @@
 /* CSS Document */
 @charset "UTF-8";
 
-/* content settings */
+/* content settings
 #content {
 	background-color: rgba(47,47,47, .85);
 	border-radius: 30px;
@@ -11,11 +11,11 @@
 	padding-bottom: 30px;
 	padding-top: 30px;
 }
-/* end of content settings */
+end of content settings */
 
 /* start of form style */
 #pdetails, #questions, #rating {
-	background-color: rgba(255,255,255,.1);
+	background-color: rgba(21,21,21,0.1);
 	border-radius: 3px;
 	margin-top: 10px;
 	margin-left: 5%;
@@ -32,16 +32,12 @@
 	float: right;
 }
 
-#content .check {
-	color: #31d120;
-}
-
 fieldset {
-	border-color: #31d120;
+	border-color: #83e115;
 }
 
 legend {
-	color: #31d120;
+	color: #151515;
 }
 
 label {
