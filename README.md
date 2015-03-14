@@ -10,9 +10,9 @@ The template is to keep all the pages to the same standard
 
 **Update Wed 11 Mar 2015 11:28am**
 
-THe default colours are:
-2f2f2f - grey
-ffffff - white
-31d120 - green
+The default colours are:
+    dark-background: #151515  // apply for text as well
+    avocado:         #83e115  // menu and block
+    white:           #ffffff  // background and text
 
 please do use these values in your custom stylesheets (if you have one).
