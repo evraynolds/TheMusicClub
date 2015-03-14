@@ -13,9 +13,12 @@ The template is to keep all the pages to the same standard
 The default colours are:
 
     dark-background: #151515  // apply for text as well
-
     avocado:         #83e115  // menu and block
-    
     white:           #ffffff  // background and text
+
+    - Feel free to remove the left block and utilize a full page
+    simply remove the div.left-block and change the div.main-content with
+
+    <div class="main-content-full"></div>
 
 please do use these values in your custom stylesheets (if you have one).
