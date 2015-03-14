@@ -2,56 +2,88 @@
 <html>
 
 <head>
-
 	<meta charset="utf-8">
-
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
-	<title></title>
-
-	<link rel="stylesheet" href="./css/globalstyle.css"> <!-- call global stylesheet -->
-
-	<link rel="stylesheet" href="./css/'yourstylesheet.css'"> <!-- call custom stylesheet -->
-
+	<title>The Music Club - Home</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> <!-- Font-Awesome -->
+	<link rel="stylesheet" href="./css/global.css"> <!-- Global stylesheet -->
+	<!-- <link rel="stylesheet" href="./css/custom.css"> --> <!-- Custom stylesheet -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> <!-- jQuery Library -->
+	<script src="./js/default.js"></script> <!-- Default JavaScript -->
 </head>
 
 <body>
 
-	<header> <!-- html5 header -->
+	<header> <!-- Header -->
 
-			<div class="cdspin"> <!-- page logo -->
-				
-				<img src="./images/cd.png" alt="">
+		<div class="logo">
+			<img class="cover" src="./images/logo-cover.png" alt="Cover">
+			<img class="cd" src="./images/logo.png" alt="CD">
+		</div>
 
-			</div> <!-- end of page logo -->
-		
-		<div class="textspace"> <!-- textspace div separator -->
-			
-		</div> <!-- end of textspace div separator -->
+		<h1>Music Club</h1>
+		<i class="fa fa-music"></i>
 
-	</header> <!-- end of html5 header -->
-
-	<nav> <!-- page links -->
+		<nav class="menu"> <!-- Navigation -->
             <ul>
-                <li><a href="link-to-html-page.html">enter name here</a></li>
+                <li><a href="/content.html">Home</a></li>
+                <li><a href="/content.html">Musics</a></li>
+                <li><a href="/content.html">Top 50</a></li>
+                <li><a href="/content.html">CV's</a></li>
+                <li><a href="/content.html">Team</a></li>
+                <li><a href="/content.html">About Us</a></li>
+                <li class="pull-right search"><a href="#"> <i class="fa fa-search"></i> </a></li>
             </ul>
-    </nav> <!-- end of links -->
+	    </nav> <!-- END of navigation -->
+
+	</header> <!-- END of header -->
+
+	<div class="search-bar"> <!-- Search bar -->
+		<form action="">
+			<input type="text" name="do-search" placeholder="Search for your favorite music...">
+			<a href="#"><i class="fa fa-close close"></i></a>
+		</form>
+	</div> <!-- END search bar -->
+
+	<div class="page-wrapper"> <!-- Page-wrap -->
+
+		<aside class="left-block">  <!-- Left Block -->
+
+			<div class="title"> <!-- Title -->
+				<h2>Top <span class="avocado">Songs</span></h2>
+				<i class="fa fa-music"></i>
+			</div> <!-- END Title -->
+
+			<div class="content"> <!-- Content -->
+				<p>Sammy Hagar - Watch ‘I Can’t Drive 55</p>
+				<p>Kansas - Carry On Wayward Son</p>
+				<p>Kansas - Carry On Wayward Son</p>
+			</div> <!-- END content -->
+
+		</aside> <!-- END left-block -->
+
+		<main class="main-content"> <!-- Main content -->
+
+			<article>
+				<h2>The Rock lives forever</h2>
+				<p>
+				   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eligendi deserunt ex sint excepturi esse consequuntur amet fuga sapiente. Fugit consequatur eius nisi eligendi, pariatur itaque voluptates nihil nesciunt quos.
+				   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eligendi deserunt ex sint excepturi esse consequuntur amet fuga sapiente. Fugit consequatur eius nisi eligendi, pariatur itaque voluptates nihil nesciunt quos.
+				</p>
+				<p>
+				   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eligendi deserunt ex sint excepturi esse consequuntur amet fuga sapiente. Fugit consequatur eius nisi eligendi, pariatur itaque voluptates nihil nesciunt quos.
+				   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eligendi deserunt ex sint excepturi esse consequuntur amet fuga sapiente. Fugit consequatur eius nisi eligendi, pariatur itaque voluptates nihil nesciunt quos.
+				</p>
 
 
-	<div id="content"> <!-- content serparator -->
-		
-		<div class="textspace"> <!-- textspace div separator -->
-			
-		</div> <!-- end of textspace div separator -->
+			</article>
 
-	</div> <!-- end of content seperator -->
-	
-	<footer> <!-- html5 footer -->
-	
-		<div class="textspace"> <!-- textspace div separator -->
-			
-		</div> <!-- end of textspace div separator -->
+		</main> <!-- END main content -->
 
+	</div> <!-- END of page-wrap -->
+
+	<footer> <!-- Footer -->
+		<p class="copy">&copy; 2015 - Music Club Ltd.</p>
 	</footer> <!-- end of html5 footer -->
 
 </body>
