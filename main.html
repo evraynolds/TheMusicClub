@@ -1,114 +1,126 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	
+
 	<meta charset="utf-8">
-	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	
-	<title>
-		Main page
-	</title>
 
-	<link rel="stylesheet" href="./css/globalstyle.css"> <!-- call global stylesheet -->
-	
-	<link rel="stylesheet" href="./css/main.css"> <!-- call custom stylesheet -->
+	<title>The Music Club - Home</title>
 
-	<link rel="icon" href="./images/favicon.ico"> <!-- call favicon -->
+	<link rel="icon" href="./images/favicon.ico">
 
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> <!-- Font-Awesome -->
+	<link rel="stylesheet" href="./css/global.css"> <!-- Global stylesheet -->
+	<link rel="stylesheet" href="./css/main.css"> <!-- Custom stylesheet -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> <!-- jQuery Library -->
+	<script src="./js/default.js"></script> <!-- Default JavaScript -->
 </head>
 
 <body>
 
-	<div id="progressbar"> <!-- progress bar div -->
+	<header> <!-- Header -->
 
-  		<span id="loading"></span>
+		<div class="logo">
+			<img class="cover" src="./images/logo-cover.png" alt="Cover">
+			<img class="cd" src="./images/logo.png" alt="CD">
+		</div>
 
-	</div> <!-- end of progress bar div -->
+		<h1>Music Club</h1>
 
-	<header> <!-- html5 header -->
+		<i class="fa fa-music"></i>
 
-		<div class="textspace" <!-- textspace div separator -->
-
-			<div class="cdspin"> <!-- page logo -->
-				
-				<img src="./images/cd.png" alt="">
-
-			</div> <!-- end of page logo -->
-			
-			<h1> <!-- page heading -->
-				Welcome to our main page!
-			</h1> <!-- end of page heading -->
-
-		</div> <!-- end of textspace div separator -->
-			
-	<nav> <!-- page links -->
+		<nav class="menu"> <!-- Navigation -->
             <ul>
-                <li><a href="main.html">home</a></li>
-                <li><a href="cvpage.html">view our cvs!</a></li>
-                <li><a href="feedback.html">give us feedback!</a></li>
+                <li><a href="./main.html">Home</a></li>
+                <li><a href="/content.html">Musics</a></li>
+                <li><a href="/content.html">Top 50</a></li>
+                <li><a href="/content.html">CV's</a></li>
+                <li><a href="/content.html">Team</a></li>
+                <li><a href="/content.html">About Us</a></li>
+                <li class="pull-right search"><a href="#"> <i class="fa fa-search"></i> </a></li>
             </ul>
-    </nav> <!-- end of links -->
+	    </nav> <!-- END of navigation -->
 
-	</header> <!-- end of html5 header -->
+	</header> <!-- END of header -->
 
+	<div class="search-bar"> <!-- Search bar -->
+		<form action="">
+			<input type="text" name="do-search" placeholder="Search for your favorite music...">
+			<a href="#"><i class="fa fa-close close"></i></a>
+		</form>
+	</div> <!-- END search bar -->
 
-	<div id="wrap"> <!-- content wrapper -->
+	<div class="page-wrapper"> <!-- Page-wrap -->
 
-		<div id="content"> <!-- content seperator -->
+		<aside class="left-block">  <!-- Left Block -->
+
+			<div class="title"> <!-- Title -->
+				<h2>Top <span class="avocado">Songs</span></h2>
+				<i class="fa fa-music"></i>
+			</div> <!-- END Title -->
+
+			<div class="content"> <!-- Content -->
+				<p>X</p>
+				<p>Y</p>
+				<p>Z</p>
+			</div> <!-- END content -->
+
+		</aside> <!-- END left-block -->
+
+		<main class="main-content"> <!-- Main content -->
+
+			<article>
+				<h2>The Team</h2>
+				<div class="rq"> <!-- rodrigo's picture -->
+
+					<img src="./images/profPics/rq.jpg" alt="">
+
+						<p>
+							Rodrigo Queiroz
+						</p>
+
+				</div>
+
+				<div class="nm"> <!-- niral's picture -->
 			
-			<div class="textspace" <!-- textspace div separator -->
-				
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus rerum sit, quo error omnis totam dolores inventore dolore, eos sint, maxime magnam alias optio aut quasi cumque natus, eum? Praesentium.
+					<img src="./images/profPics/nm.jpg" alt="">
 
-				</p>
+						<p>
+							Niral Mehta
+						</p>
 
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minus voluptas repellendus vel, officiis perspiciatis iusto delectus, saepe reprehenderit. Quasi dicta dolor explicabo fugit incidunt hic, aliquam, inventore temporibus quas!
-				</p>
+				</div>
 
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus rerum sit, quo error omnis totam dolores inventore dolore, eos sint, maxime magnam alias optio aut quasi cumque natus, eum? Praesentium.
+				<div class="er"> <!-- evan's picture -->
 
-				</p>
+					<img src="./images/profPics/er.jpg" alt="">
+						
+						<p>
+							Evan Raynolds
+						</p>
 
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minus voluptas repellendus vel, officiis perspiciatis iusto delectus, saepe reprehenderit. Quasi dicta dolor explicabo fugit incidunt hic, aliquam, inventore temporibus quas!
-				</p>				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus rerum sit, quo error omnis totam dolores inventore dolore, eos sint, maxime magnam alias optio aut quasi cumque natus, eum? Praesentium.
+				</div>
 
-				</p>
+				<div class="cs"> <!-- chris' picture -->
 
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minus voluptas repellendus vel, officiis perspiciatis iusto delectus, saepe reprehenderit. Quasi dicta dolor explicabo fugit incidunt hic, aliquam, inventore temporibus quas!
-				</p>				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus rerum sit, quo error omnis totam dolores inventore dolore, eos sint, maxime magnam alias optio aut quasi cumque natus, eum? Praesentium.
+					<img src="./images/profPics/cs.jpg" alt="">
 
-				</p>
+						<p>
+							Chris Selwood
+						</p>
 
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt minus voluptas repellendus vel, officiis perspiciatis iusto delectus, saepe reprehenderit. Quasi dicta dolor explicabo fugit incidunt hic, aliquam, inventore temporibus quas!
-				</p>
+				</div>
 
-			</div> <!-- end of textspace div separator -->
+			</article>
 
-		</div> <!-- end of content separator -->
+		</main> <!-- END main content -->
 
-	</div> <!-- end of content wrapper -->
+	</div> <!-- END of page-wrap -->
 
-	<footer> <!-- footer information -->
-
-		<div class="textspace" <!-- textspace div separator -->
-	
-			<p>
-				Copyright: AwesomeGroupNameHere 2015
-			</p>
-
-		</div> <!-- end of textspace div separator --> 
-
-	</footer> <!-- end of footer information -->
-
+	<footer> <!-- Footer -->
+		<p class="copy">&copy; 2015 - Music Club Ltd.</p>
+	</footer> <!-- end of html5 footer -->
 
 </body>
 
