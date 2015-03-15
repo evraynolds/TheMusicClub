@@ -24,7 +24,12 @@ h2 {
    -webkit-animation: fadeIn 3s;
    animation-name: scaleFadeIn;
    -moz-animation-name: scaleFadeIn;
+   -ms-animation-name: scaleFadeIn;
    -webkit-animation-name: scaleFadeIn;
+   -moz-animation-timing-function: linear;
+   -ms-animation-timing-function: linear;
+   -webkit-animation-timing-function: linear;
+
 }
 
 @-moz-keyframes scaleFadeIn {
