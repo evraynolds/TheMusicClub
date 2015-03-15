@@ -172,6 +172,7 @@ header .fa-music { color: #ffffff; font-size: 16px; position: absolute; margin-t
 .left-block aside { width: 100%; float: left; margin-bottom: 15px; background-color: #ffffff; }
 .left-block aside:last-child { margin-bottom: 0; }
 .left-block .content { margin: 12px; }
+.left-block a { text-decoration: none; }
 .left-block p { font-weight: 300; padding: 0 12px 0 12px; }
 /* List style with different background colors */
 .left-block .list { margin: 12px 12px 0 12px; }
@@ -193,10 +194,14 @@ aside .team .member { width: 100%; background-color: #232323; float: left; margi
 aside .team .member:first-child { margin-top: -12px; }
 aside .team .member:hover { cursor: pointer; background-color: #2c2c2c; }
 aside .team .pic { width: 100px; height: 100px; float: left; margin-left: 10px; }
-aside .team .pic img { width: 100px; height: 100px; border-radius: 50%; }
+aside .team .pic img { width: 100px; height: 100px; border-radius: 50%; border: 1px solid rgba(159, 230, 18, 0.5); }
 aside .team .info { width: auto; float: left; }
+aside .team .info a { color: #ffffff; display: inline-block; }
 aside .team .info p { line-height: 8px; padding-left: 20px; }
-aside .team .info-further { width: 100%; float: left; background-color: #2e2e2e; margin-top: 6px; display: none; }
+aside .team .info i { font-size: 14px; margin-left: 10px; }
+aside .team .info .indicator { font-size: 18px; color: #ffffff; float: right; margin-right: -84px; margin-top: -14px; width: 18px; font-size: 22px; }
+aside .info-further { position: relative; width: 100%; height: 100px; padding: 0px; margin-top: 6px; display: none; float: left; }
+
 
 /*
  *    Main content and main content full page
