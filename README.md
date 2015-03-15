@@ -23,6 +23,7 @@ The default colours are:
 
     - List a like paragraphs
     you can improve readability from left-block <p>
-    all you have to do is include .list to the container containing <p> of course it must be inside left-block
+    all you have to do is include .list to the container containing <p> of course it must be
+    inside left-block
 
 please do use these values in your custom stylesheets (if you have one).
