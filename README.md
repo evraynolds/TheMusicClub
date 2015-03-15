@@ -1,5 +1,5 @@
 # HTML-CW
-This is a repository for all of us to uplaod the work we do and collate it together
+This is a repository for all of us to upload the work we do and collate it together
 
 
 **Update Mon 09 Mar 2015 15:00pm**
@@ -27,3 +27,7 @@ The default colours are:
     inside left-block
 
 please do use these values in your custom stylesheets (if you have one).
+
+**Update Sun 15 Mar 2015 18:00**
+
+In the cv folder there is a new template for how the cvs could look, please do follow this and use your best judgement when applying the tags. See my CV (Niral) as a reference.
