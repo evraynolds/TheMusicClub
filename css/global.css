@@ -42,13 +42,68 @@ ul, li, h1, h2, h3, h4 { padding: 0; margin: 0; }
 /* Background */
 body { background-image: url(../images/bg.png); background-color: #151515; font-family: 'Lato', sans-serif; font-size: 16px; }
 
- /* Progress Bar */
-#progressbar{ position: absolute; width: 100%; }
+/* Progress Bar */
+.progress { background-color: transparent; height: 2px; position: relative; width: 100%; }
+.progress-bar {
+   animation: fadeIn 3s;
+   -moz-animation: fadeIn 3s;
+   -webkit-animation: fadeIn 3s;
+   animation-name: progressbar;
+   -moz-animation-name: progressbar;
+   -webkit-animation-name: progressbar;
+   animation-fill-mode: forwards;
+   -moz-animation-fill-mode: forwards;
+   -webkit-animation-fill-mode: forwards;
+   background-image: linear-gradient(to right, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
+   background-size: 100% 2px;
+   height: 100%;
+   position: relative;
+}
 
-#loading{ height: 2px; width: 100%; border-radius: 10px;  background: #83e115; position: absolute; display: inline-block; animation: load 3s ease; }
+/* progress-bar animation */
+@keyframes progressbar {
+ 0%, 100% { transition-timing-function: cubic-bezier(1, 0, .65, .85);  }
+ 0% { width: 0; }
+ 10% { opacity: 1; }
+ 20% { opacity: 1; }
+ 30% { opacity: 1; }
+ 40% { opacity: 1; }
+ 50% { opacity: 1; }
+ 60% { opacity: 1; }
+ 70% { opacity: 1; }
+ 80% { opacity: 1; }
+ 90% { opacity: 1; }
+ 100% { width: 100%; opacity: 0; }
+}
 
-@keyframes load{ 
-  0%{ background: transparent; width: 2%;  }
+@-webkit-keyframes progressbar {
+ 0%, 100% { transition-timing-function: cubic-bezier(1, 0, .65, .85);  }
+ 0% { width: 0; }
+ 10% { opacity: 1; }
+ 20% { opacity: 1; }
+ 30% { opacity: 1; }
+ 40% { opacity: 1; }
+ 50% { opacity: 1; }
+ 60% { opacity: 1; }
+ 70% { opacity: 1; }
+ 80% { opacity: 1; }
+ 90% { opacity: 1; }
+ 100% { width: 100%; opacity: 0; }
+}
+
+@-moz-keyframes progressbar {
+ 0%, 100% { transition-timing-function: cubic-bezier(1, 0, .65, .85);  }
+ 0% { width: 0; }
+ 10% { opacity: 1; }
+ 20% { opacity: 1; }
+ 30% { opacity: 1; }
+ 40% { opacity: 1; }
+ 50% { opacity: 1; }
+ 60% { opacity: 1; }
+ 70% { opacity: 1; }
+ 80% { opacity: 1; }
+ 90% { opacity: 1; }
+ 100% { width: 100%; opacity: 0; }
 }
 
 /*
@@ -100,13 +155,13 @@ header .fa-music { color: #ffffff; font-size: 16px; position: absolute; margin-t
 
 /* Search bar */
 .search-bar { width: 100%; height: 40px; float: left; margin-bottom: 15px; display: none; }
-.search-bar input { width: 98.4%; height: 40px; background-color: #3b3b3b; border: none; padding: 10px; font-size: 24px; color: #ffffff; font-weight: 300; }
+.search-bar input { width: 99%; height: 40px; background-color: #3b3b3b; border: none; padding: 0.5%; font-size: 24px; color: #ffffff; font-weight: 300; }
 .search-bar input:focus { outline-width: 0; }
 .search-bar input::-webkit-input-placeholder { color: #828282; font-weight: 300; }
 .search-bar input:-moz-placeholder { color: #828282; font-weight: 300; } /* Firefox 18- */
 .search-bar input::-moz-placeholder { color: #828282; font-weight: 300; } /* Firefox 19+ */
 .search-bar input:-ms-input-placeholder { color: #828282; font-weight: 300; }
-.search-bar .close { color: #ffffff; font-size: 18px; position: absolute; right: 0; margin-top: -40px; margin-right: 20px; }
+.search-bar .close { color: #ffffff; font-size: 18px; position: absolute; right: 10px; margin-top: -35px; }
 
 /*
  *    Left block
