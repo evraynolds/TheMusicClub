@@ -165,13 +165,43 @@ header .fa-music { color: #ffffff; font-size: 16px; position: absolute; margin-t
 
 /*
  *    Left block
+ *    Extra:
+ *    if .list is used an alternate background color will be displayed for paragraphs
  */
-.left-block { width: 30%; min-height: 100px; background-color: #ffffff; float: left; margin: 1.5%; }
+.left-block { width: 30%; min-height: 100px; float: left; margin: 1.5%; }
+.left-block aside { width: 100%; float: left; margin-bottom: 15px; background-color: #ffffff; }
+.left-block aside:last-child { margin-bottom: 0; }
 .left-block .content { margin: 12px; }
-.left-block p { font-weight: 300; line-height: 12px; }
+.left-block a { text-decoration: none; }
+.left-block p { font-weight: 300; padding: 0 12px 0 12px; }
+/* List style with different background colors */
+.left-block .list { margin: 12px 12px 0 12px; }
+.left-block .list p { font-weight: 300;   margin: 0 -12px 0 -12px; padding: 12px; }
+.left-block .list p:first-child { margin-top: -12px; }
+.left-block .list p:last-child { margin-bottom: 0; }
+.left-block .list p:nth-child(even) { background-color: #DDDDDD; }
+.left-block .list p:nth-child(odd) { background-color: #F0F0F0; }
+/* Title */
 .left-block .title { width: 100%; height: 45px; background-color: #151515; }
 .left-block .title h2 { font-size: 24px; font-weight: 400; color: #ffffff; padding: 6px 0 0 12px; }
 .left-block .title i { color: #ffffff; font-size: 24px; position: relative; float: right; margin-top: -25px; margin-right: 14px; }
+
+/*
+ *    The Team
+ *
+ */
+aside .team .member { width: 100%; background-color: #232323; float: left; margin-left: -12px; margin-right: -12px; color: #ffffff; padding: 12px; }
+aside .team .member:first-child { margin-top: -12px; }
+aside .team .member:hover { cursor: pointer; background-color: #2c2c2c; }
+aside .team .pic { width: 100px; height: 100px; float: left; margin-left: 10px; }
+aside .team .pic img { width: 100px; height: 100px; border-radius: 50%; border: 1px solid rgba(159, 230, 18, 0.5); }
+aside .team .info { width: auto; float: left; }
+aside .team .info a { color: #ffffff; display: inline-block; }
+aside .team .info p { line-height: 8px; padding-left: 20px; }
+aside .team .info i { font-size: 14px; margin-left: 10px; }
+aside .team .info .indicator { font-size: 18px; color: #ffffff; float: right; margin-right: -84px; margin-top: -14px; width: 18px; font-size: 22px; }
+aside .info-further { position: relative; width: 100%; height: 100px; padding: 0px; margin-top: 6px; display: none; float: left; }
+
 
 /*
  *    Main content and main content full page
@@ -188,4 +218,4 @@ header .fa-music { color: #ffffff; font-size: 16px; position: absolute; margin-t
  *    Footer
  */
 footer { width: 100%; height: 100px; background-color: #151515; margin-top: 15px; float: left; clear: both; }
-footer .copy { color: #ffffff; font-weight: 300; font-size: 12px; position: absolute; bottom: 0; left: 46%; }
+footer .copy { color: #ffffff; font-weight: 300; font-size: 12px; text-align: center; }
