@@ -1,53 +1,54 @@
-/* CSS Document */
+/* CSS Document 
+* 
+*	@Author: Niral Mehta
+*	@date: 15th Mar 2015
+*	@last-update: 15th Mar 2015
+*/
 @charset "UTF-8";
 
 /* header style */
-header {
-	background-color: rgba(47,47,47,0);
-	height: 15%;
-	min-height: 15%;
-}
-
-h1 {
-	color: #31d120;
+h2 {
 	text-align: center;
 }
-/* end of header style */
+/* END of header style */
 
-/* content style */
-#content {
-	background-color: rgba(47,47,47, .65);
-	color: #31d120;
-	font-family: "AleksandraC";
-	height: 60%;
-	margin-left: 10%;
-	margin-right: 10%;
-	margin-top: 20px;
-	min-height: 60%;
-	text-align: center;
-}
-
-.rq, .nm, .cs, .er  {
-	background-color: rgba(255,255,255, .1);
-	display: inline-block;
-	height: 200px;
-	margin: 3%;
-	padding: 2%;
-	width: 200px;
-}
-
-img {
-	height: 150px;
-	margin-top: 5px; 
-	width: 150px;
-}
-/* end of content style */
-
-/* footer style */
-footer {
-	background-color: rgba(47,47,47,0);
-	height: 15%;
-	min-height: 15%;
+/* intro image settings and animations*/
+.main-content-full img {
+	height: 75%;
 	width: 100%;
 }
-/* end of footer style */
+
+.scale {
+	animation: fadeIn 3s;
+	-moz-animation: fadeIn 3s;
+   -webkit-animation: fadeIn 3s;
+   animation-name: scaleFadeIn;
+   -moz-animation-name: scaleFadeIn;
+   -webkit-animation-name: scaleFadeIn;
+}
+
+@-moz-keyframes scaleFadeIn {
+	0% {opacity: 0;}
+	25% {opacity: 0.25;}
+	50% {opacity: 0.5;}
+	75% {opacity: 0.75;}
+	100% {opacity: 1;}
+}
+
+@-webkit-keyframes scaleFadeIn {
+	0% {opacity: 0;}
+	25% {opacity: 0.25;}
+	50% {opacity: 0.5;}
+	75% {opacity: 0.75;}
+	100% {opacity: 1;}
+}
+
+@keyframes scaleFadeIn {
+	0% {opacity: 0;}
+	25% {opacity: 0.25;}
+	50% {opacity: 0.5;}
+	75% {opacity: 0.75;}
+	100% {opacity: 1;}
+}
+
+/*END of intro image settings and animations*/

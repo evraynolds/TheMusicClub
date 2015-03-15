@@ -1,6 +1,26 @@
 <!DOCTYPE html>
 <html>
 
+<!--
+
+	Template
+
+	@author Rodrigo Queiroz
+	@date 14th Mar 2015
+	@contributors Niral Mehta
+
+	To create your pages please follow the template and utilize the appropriate div classes.
+
+	- Left content
+		.left-block - Followed by div.title div.content
+
+	- Main Content
+		.main-content - followed by <article> <h2> <p>
+
+	- You can simply remove the .left-block and change the .main-content with .main-content-full for a full page.
+
+-->
+
 <head>
 
 	<meta charset="utf-8">
@@ -12,9 +32,11 @@
 
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> <!-- Font-Awesome -->
 	<link rel="stylesheet" href="./css/global.css"> <!-- Global stylesheet -->
-	<link rel="stylesheet" href="./css/main.css"> <!-- Custom stylesheet -->
+	<!-- <link rel="stylesheet" href="./css/custom.css"> --> <!-- Custom stylesheet -->
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> <!-- jQuery Library -->
 	<script src="./js/default.js"></script> <!-- Default JavaScript -->
+
 </head>
 
 <body>
@@ -22,7 +44,6 @@
 	<div class="progress"> <!-- Progress bar -->
     	<div class="progress-bar"></div>
 	</div> <!-- END progress bar -->
-
 
 	<header> <!-- Header -->
 
@@ -32,17 +53,17 @@
 		</div>
 
 		<h1>Music Club</h1>
-
 		<i class="fa fa-music"></i>
 
 		<nav class="menu"> <!-- Navigation -->
             <ul>
                 <li><a href="./main.html">Home</a></li>
-                <li><a href="./feedback.html">Feedback</a></li>
+                <li><a href="./quiz.html">Quiz</a></li>
                 <li><a href="/content.html">Top 50</a></li>
                 <li><a href="/content.html">CV's</a></li>
                 <li><a href="/content.html">Team</a></li>
-                <li><a href="/content.html">About Us</a></li>
+				<li><a href="./feedback.html">Feedback</a></li>
+				<li><a href="/content.html">About Us</a></li>
                 <li class="pull-right search"><a href="#"> <i class="fa fa-search"></i> </a></li>
             </ul>
 	    </nav> <!-- END of navigation -->
@@ -143,7 +164,7 @@
 							<div class="info">
 								<p>Chris Selwood</p>
 								<p>Development Team</p>
-								<p> <a href="./cv/chris-selwood.html">CV <i class="fa fa-chain"></i></a> </p>
+								<p> <a href="./ChrisCVPage.html">CV <i class="fa fa-chain"></i></a> </p>
 								<p> <i class="indicator fa fa-angle-down"></i> </p>
 							</div>
 
@@ -185,46 +206,16 @@
 		<main class="main-content"> <!-- Main content -->
 
 			<article>
-				<h2>The Team</h2>
-				<div class="rq"> <!-- rodrigo's picture -->
+				<h2>The Rock lives forever</h2>
+				<p>
+				   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eligendi deserunt ex sint excepturi esse consequuntur amet fuga sapiente. Fugit consequatur eius nisi eligendi, pariatur itaque voluptates nihil nesciunt quos.
+				   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eligendi deserunt ex sint excepturi esse consequuntur amet fuga sapiente. Fugit consequatur eius nisi eligendi, pariatur itaque voluptates nihil nesciunt quos.
+				</p>
+				<p>
+				   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eligendi deserunt ex sint excepturi esse consequuntur amet fuga sapiente. Fugit consequatur eius nisi eligendi, pariatur itaque voluptates nihil nesciunt quos.
+				   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta eligendi deserunt ex sint excepturi esse consequuntur amet fuga sapiente. Fugit consequatur eius nisi eligendi, pariatur itaque voluptates nihil nesciunt quos.
+				</p>
 
-					<img src="./images/profPics/rq.jpg" alt="">
-
-						<p>
-							Rodrigo Queiroz
-						</p>
-
-				</div>
-
-				<div class="nm"> <!-- niral's picture -->
-
-					<img src="./images/profPics/nm.jpg" alt="">
-
-						<p>
-							Niral Mehta
-						</p>
-
-				</div>
-
-				<div class="er"> <!-- evan's picture -->
-
-					<img src="./images/profPics/er.jpg" alt="">
-
-						<p>
-							Evan Raynolds
-						</p>
-
-				</div>
-
-				<div class="cs"> <!-- chris' picture -->
-
-					<img src="./images/profPics/cs.jpg" alt="">
-
-						<p>
-							Chris Selwood
-						</p>
-
-				</div>
 
 			</article>
 

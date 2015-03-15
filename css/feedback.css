@@ -1,18 +1,6 @@
 /* CSS Document */
 @charset "UTF-8";
 
-/* content settings
-#content {
-	background-color: rgba(47,47,47, .85);
-	border-radius: 30px;
-	color: #31d120;
-	margin-right: 2%;
-	margin-top: 20px;
-	padding-bottom: 30px;
-	padding-top: 30px;
-}
-end of content settings */
-
 /* start of form style */
 #pdetails, #questions, #rating {
 	background-color: rgba(21,21,21,0.1);

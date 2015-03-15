@@ -9,8 +9,8 @@ h2 {
 	background-color: rgba(21,21,21,0.7);
 	display: inline-block;
 	height: 200px;
-	margin: 5%;
-	padding: 2%;
+ 	margin: 5%; 
+	padding: 20px;
 	width: 200px;
 }
 
