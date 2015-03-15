@@ -42,6 +42,15 @@ ul, li, h1, h2, h3, h4 { padding: 0; margin: 0; }
 /* Background */
 body { background-image: url(../images/bg.png); background-color: #151515; font-family: 'Lato', sans-serif; font-size: 16px; }
 
+ /* Progress Bar */
+#progressbar{ position: absolute; width: 100%; }
+
+#loading{ height: 2px; width: 100%; border-radius: 10px;  background: #83e115; position: absolute; display: inline-block; animation: load 3s ease; }
+
+@keyframes load{ 
+  0%{ background: transparent; width: 2%;  }
+}
+
 /*
  *    Header
  */
@@ -51,7 +60,8 @@ header { background-color: #151515; width: inherit; height: 140px; float: left; 
 .logo { margin-top: 12px; width: 69px; height: 68px; float: left; }
 .logo .cover { width: 67px; height: 67px; position: absolute; z-index: 1; margin-left: -45px; }
 .logo .cd { width: 69px; height: 68px; }
-/* Sping Logo */
+
+/* Spinning Logo */
 @-webkit-keyframes spin { from { -webkit-transform:rotate(0deg); } to {-webkit-transform:rotate(360deg); } }
 @-moz-keyframes spin { from { -moz-transform:rotate(0deg); } to { -moz-transform:rotate(360deg); } }
 @-ms-keyframes spin { from { -ms-transform:rotate(0deg); } to { -ms-transform:rotate(360deg); } }

@@ -1,67 +1,71 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
 
 	<meta charset="utf-8">
-
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-	<title>
-		Feedback
-	</title>
+	<title>The Music Club - Feedback</title>
 
-	<script src="./js/feedback.js">
-	</script>
+	<link rel="icon" href="./images/favicon.ico">
 
-	<link rel="stylesheet" href="./css/globalstyle.css"> <!-- call global stylesheet -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> <!-- Font-Awesome -->
+	<link rel="stylesheet" href="./css/global.css"> <!-- Global stylesheet -->
+	<link rel="stylesheet" href="./css/feedback.css"> <!-- Custom stylesheet -->
 
-	<link rel="stylesheet" href="./css/feedback.css"> <!-- call custom stylesheet -->
-
-	<link rel="icon" href="./images/favicon.ico"> <!-- cal favicon -->
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> <!-- jQuery Library -->
+	<script src="./js/default.js"></script> <!-- Default JavaScript -->
+	
 </head>
 
 <body>
 
-	<div id="progressbar"> <!-- progress bar div -->
+	<div id="progressbar"> <!-- Progress bar -->
 
-		<span id="loading"></span>
+  		<span id="loading"></span>
 
-	</div> <!-- end of progress bar div -->
+	</div> <!-- END of progress bar -->
 
-	<header> <!-- html5 header --> <!--div header-->
+	<header> <!-- Header -->
 
-			<div class="cdspin"> <!-- page logo -->
-				
-				<img src="./images/cd.png" alt="">
-
-			</div> <!-- end of page logo -->
-		
-		<div class="textspace" <!-- textspace div separator -->
-
-			<h1> <!-- page heading -->
-				Feedback Form
-			</h1> <!-- end of page heading -->
-
+		<div class="logo">
+			<img class="cover" src="./images/logo-cover.png" alt="Cover">
+			<img class="cd" src="./images/logo.png" alt="CD">
 		</div>
 
-		<nav> <!-- page links -->
-			<ul>
-				<li><a href="main.html">home</a></li>
-				<li><a href="cvpage.html">view our cvs!</a></li>
-				<li><a href="feedback.html">give us feedback!</a></li>
-			</ul>
-		</nav> <!-- end of links -->
+		<h1>Music Club</h1>
+		<i class="fa fa-music"></i>
 
-	</header> <!-- end of html5 header -->
+		<nav class="menu"> <!-- Navigation -->
+            <ul>
+                <li><a href="./main.html">Home</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
+                <li><a href="/content.html">Top 50</a></li>
+                <li><a href="/content.html">CV's</a></li>
+                <li><a href="/content.html">Team</a></li>
+                <li><a href="/content.html">About Us</a></li>
+                <li class="pull-right search"><a href="#"> <i class="fa fa-search"></i> </a></li>
+            </ul>
+	    </nav> <!-- END of navigation -->
 
-	<div id="wrap"> <!-- content wrapper -->
+	</header> <!-- END of header -->
 
-		<div id="content"> <!-- content seperator --> <!--div content-->
+	<div class="search-bar"> <!-- Search bar -->
+		<form action="">
+			<input type="text" name="do-search" placeholder="Search for your favorite music...">
+			<a href="#"><i class="fa fa-close close"></i></a>
+		</form>
+	</div> <!-- END search bar -->
 
-			<form action="mailto:w1492046@my.westminster.ac.uk"> <!--form will mail to specified address-->
+	<div class="page-wrapper"> <!-- Page-wrap -->
+
+		<main class="main-content-full"> <!-- Main content -->
+
+			<article>
+				<h2>The Music-Club Feedback Form</h2>
+				
+				<form action="mailto:w1492046@my.westminster.ac.uk"> <!--form will mail to specified address-->
 
 				<div id="pdetails"> <!--div for personal details-->
 
@@ -198,8 +202,6 @@
 								<br>
 								<br>
 								<br>
-								<br>
-								<br>
 
 							</label>
 						</p>
@@ -261,17 +263,16 @@
 
 			</form>
 
-		</div>
 
-	</div>
+			</article>
 
-	<footer>
-		
-		<div class="textspace" <!-- textspace div separator -->
-			
-		</div> <!-- end of textspace div separator -->
+		</main> <!-- END main content -->
 
-	</footer>
+	</div> <!-- END of page-wrap -->
+
+	<footer> <!-- Footer -->
+		<p class="copy">&copy; 2015 - Music Club Ltd.</p>
+	</footer> <!-- end of html5 footer -->
 
 </body>
 

@@ -6,16 +6,19 @@ h2 {
 }
 
 .rq, .nm, .cs, .er  {
-	background-color: rgba(255,255,255, .1);
+	background-color: rgba(21,21,21,0.7);
 	display: inline-block;
 	height: 200px;
-	margin: 3%;
+	margin: 5%;
 	padding: 2%;
 	width: 200px;
 }
 
-img {
+.main-content img {
 	height: 200px;
-	margin-left: 12%;
 	width: 200px;
+}
+
+.main-content p {
+	text-align: center;
 }
