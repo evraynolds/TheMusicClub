@@ -23,7 +23,7 @@ function submitAndCheck(frm) {
 	*/
 	if (document.getElementById('offers').checked ) {
 		alert("Your selected title " + userTitle + ", " + "Your name is " 
-			+ fname + " " + sname + ".\n" + "Your email: " + em + "\n" + "Your comments: " + note + ", " + "You rated us as " + rating + " out of 5.\n");
+			+ fname + " " + sname + ".\n" + "Your email: " + em + "\n" + "Your comments: " + note + ".\n" + "You rated us as " + rating + " out of 5.\n");
 	} else {
 
 	}
