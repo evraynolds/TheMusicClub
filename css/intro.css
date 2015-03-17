@@ -60,21 +60,9 @@ body { background-image: none; }
 }
 
 
-.blink-one {
-	animation: blink 2s steps(5, start) infinite;
-	-webkit-animation: blink 2s steps(5, start) infinite;
-	margin-left: 4px;
-}
-.blink-two {
-	animation: blink 2s steps(10, start) infinite;
-	-webkit-animation: blink 2s steps(10, start) infinite;
-	margin-left: 4px;
-}
-.blink-three {
-	animation: blink 2s steps(15, start) infinite;
-	-webkit-animation: blink 2s steps(15, start) infinite;
-	margin-left: 4px;
-}
+.blink-one { animation: blink 2s steps(5, start) infinite; -webkit-animation: blink 2s steps(5, start) infinite; margin-left: 4px; }
+.blink-two { animation: blink 2s steps(10, start) infinite; -webkit-animation: blink 2s steps(10, start) infinite; margin-left: 4px; }
+.blink-three { animation: blink 2s steps(15, start) infinite; -webkit-animation: blink 2s steps(15, start) infinite; margin-left: 4px; }
 
 
 /* spin */
