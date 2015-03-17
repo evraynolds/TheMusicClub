@@ -1,5 +1,11 @@
-/* CSS Document */
-@charset "UTF-8";
+/* CSS Document 
+*
+* @Author: Niral Mehta
+* @Contributors: Rodrigo Queiroz
+* @last-update: 17 Mar 2015
+*
+*/
+
 
 /* start of form style */
 #pdetails, #questions, #rating {
@@ -9,14 +15,6 @@
 	margin-right: 5%;
 	padding: 5px;
 	padding-bottom: 10px;
-}
-
-#pdetails img, #questions img, #rating img {
-	height: 50px;
-	width: 50px;
-	margin-bottom: -9px;
-	margin-right: -8px;
-	float: right;
 }
 
 fieldset {
@@ -30,11 +28,70 @@ legend {
 label {
 	display: inline-block;
 	float: left;
-	width: 300px;
+	width: 100%;
+	clear: both;
+	margin-bottom: 10px;
 }
 
 input {
 	display: inline-block;
 	float: left;
+	min-width: 2px;
+	clear: both;
+	margin-bottom: 10px;
 }
+
+button {
+	background: #000;
+	border: none;
+	border-radius: 2px;
+	border-top: 2px solid;
+	color: #fff;
+	padding: 10px;
+}
+
+button:hover {
+	background: #151515;
+	border-top: 2px solid #83e115;
+	cursor: pointer;
+}
+
 /* end of form style */
+
+/*.qmark:hover {
+    display: block;
+}*/
+
+
+.input-box {
+	float: left;
+	min-height: 100px;
+	min-width: 200px;
+	clear: both;
+}
+
+.input-value {
+	margin-bottom: 10px;
+	min-width: 10px;
+	float: left;
+}
+
+.help-info {
+	background: #B9B9B7;
+	float: right;
+	margin-left: 10px;
+	height: 20px;
+	padding: 2px 6px 6px 6px;
+	min-width: 200px;
+	display: none;
+}
+
+.help-info p {
+	padding: 0; margin: 0;
+}
+
+.qmark {
+	color: #83e115; 
+	font-size: 20px;
+	margin-left: 10px;
+}

@@ -37,3 +37,14 @@ function yourRating (rateArray) {
 	}
 	return "";
 }
+
+function tooltipHelp(value) {
+	var button = document.getElementsByClassName("help-info");
+	// set to display
+	if( value ) {
+		button[0].style.display = "none";
+	} else {
+		button[0].style.display = "block";
+	}
+	return false;
+}
