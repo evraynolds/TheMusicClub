@@ -14,11 +14,56 @@ h2 {
 	width: 200px;
 }
 
-.main-content img {
-	height: 200px;
-	width: 200px;
-}
-
 .main-content p {
 	text-align: center;
+}
+
+.album {
+	width: 94%;
+	margin-top: 2%;
+	margin-left: 2%;
+	float: left;
+	background-color: #EDEDED;
+	padding: 1%;
+}
+
+.album:last-child {
+	margin-bottom: 2%;
+}
+
+.albumart {
+	width: 280px;
+	height: 280px;
+	float: left;
+}
+
+.albumart img {
+	width: 280px;
+	height: 280px;
+}
+
+.albumtracks {
+	width: 840px;
+	padding-top: 6px;
+	float: left;
+}
+
+.fa-music {
+	margin-left: -15px;
+}
+
+.albumtracks ul {
+	list-style-type: none;
+}
+
+.albumtracks ul li {
+	width: 350px;
+	float: left;
+	padding: 2px 10px 10px 30px;
+}
+
+.albumtracks i {
+	width: 14px;
+	font-size: 14px;
+	padding-right: 6px;
 }
