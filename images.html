@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>The Music Club - Template</title>
+
+	<link rel="icon" href="./images/favicon.ico">
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> <!-- Font-Awesome -->
+	<link rel="stylesheet" href="./css/global.css"> <!-- Global stylesheet -->
+	<link rel="stylesheet" href="./css/images.css"> <!-- Custom stylesheet -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> <!-- jQuery Library -->
+	<script src="./js/default.js"></script> <!-- Default JavaScript -->
+
+	<script src="./js/images.js"></script>
+
+</head>
+
+<body>
+
+	<div class="progress"> <!-- Progress bar -->
+		<div class="progress-bar"></div>
+	</div> <!-- END progress bar -->
+
+	<header> <!-- Header -->
+
+		<div class="logo">
+			<img class="cover" src="./images/logo-cover.png" alt="Cover">
+			<img class="cd" src="./images/logo.png" alt="CD">
+		</div>
+
+		<h1>Music Club</h1>
+		<i class="fa fa-music"></i>
+
+		<nav class="menu"> <!-- Navigation -->
+			<ul>
+				<li><a href="./main.html">Home</a></li>
+				<li><a href="./quiz.html">Quiz</a></li>
+				<li><a href="./products.html">Store</a></li>
+				<li><a href="./navigation.html">Website Layout</a></li>
+				<li><a href="./feedback.html">Feedback</a></li>
+				
+				<li class="pull-right search"><a href="#"> <i class="fa fa-search"></i> </a></li>
+			</ul>
+		</nav> <!-- END of navigation -->
+
+	</header> <!-- END of header -->
+
+	<div class="search-bar"> <!-- Search bar -->
+		<form action="">
+			<input type="text" name="do-search" placeholder="Search for your favorite music...">
+			<a href="#"><i class="fa fa-close close"></i></a>
+		</form>
+	</div> <!-- END search bar -->
+
+	<div class="page-wrapper"> <!-- Page-wrap -->
+
+		<main class="main-content-full"> <!-- Main content -->
+
+			<article>
+				<h2> Musical Instruments </h2>
+
+				<h4> Choose An Instrument From Below! </h4>
+
+				<div class="instruments">
+
+					<div class="imagecont">
+						<img src="./images/images_page/guitar.png" onclick="mainImageFunction('./images/images_page/guitar.png'); guitarFunction()"> 
+					</div>
+
+					<div class="imagecont">
+						<img src="./images/images_page/drums.png" onclick="mainImageFunction('./images/images_page/drums.png'); drumsFunction()">
+					</div>
+
+					<div class="imagecont">
+						<img src="./images/images_page/piano.png" onclick="mainImageFunction('./images/images_page/piano.png'); pianoFunction()">
+					</div>
+
+					<div class="imagecont">
+						<img src="./images/images_page/bass.png" onclick="mainImageFunction('./images/images_page/bass.png'); bassFunction()">
+					</div> 
+
+					<div class="imagecont">
+						<img src="./images/images_page/mic.png" onclick="mainImageFunction('./images/images_page/mic.png'); micFunction()">
+					</div>
+
+				</div>
+
+					<div  class="display" align="center">
+						<img id="displayim" alt="Click an image!">
+						<h5 id = "title"> The Instruments Name Here! </h5>
+						<p id = "desc"> The Instruments Description Here! </p>
+					</div>
+
+					<form>
+						<select id="changeColour" onChange="changeColourFunction(this.form);">
+							<option value = ""> Select Background Colour </option>
+							<option value = "grey"> Grey </option>
+							<option value = "red"> Red </option>
+							<option value = "green"> Green </option>
+							<option value = "black"> Black </option>
+						</select>
+					</form>
+					<form>
+						<select id="textColour" onChange="textColourFunction(this.form);">
+							<option value = ""> Select Text Colour </option>
+							<option value = "black"> Black </option>
+							<option value = "grey" > Grey </option>
+							<option value = "green"> Green </option>
+							<option value = "white"> White </option>
+						</select>
+					</form>
+				</article>
+
+			</main> <!-- END main content -->
+
+		</div> <!-- END of page-wrap -->
+
+		<footer> <!-- Footer -->
+			<p class="copy">&copy; 2015 - Music Club Ltd.</p>
+		</footer> <!-- end of html5 footer -->
+
+	</body>
+
+	</html>
