@@ -1,69 +1,36 @@
-/* CSS Document */
-@charset "UTF-8";
+/* CSS Document
+*
+*	@Author: Niral Mehta
+*	@date: 15th Mar 2015
+*	@last-update: 20th Mar 2015
+*   @Contributor Rodrigo Queiroz
+*/
 
-h2 {
-	text-align: center;
+h2 { text-align: center; }
+
+.rq, .nm, .cs, .er  { background-color: rgba(21,21,21,0.7); display: inline-block; height: 200px; margin: 5%; padding: 20px; width: 200px; }
+
+.main-content p { text-align: center; }
+
+.album { width: 94%; margin-top: 2%; margin-left: 2%; float: left; background-color: #ededed; padding: 1%; }
+
+.album:last-child { margin-bottom: 2%; }
+
+.albumart { width: 280px; height: 280px; float: left; }
+
+.albumart img { width: 280px; height: 280px;
 }
 
-.rq, .nm, .cs, .er  {
-	background-color: rgba(21,21,21,0.7);
-	display: inline-block;
-	height: 200px;
- 	margin: 5%; 
-	padding: 20px;
-	width: 200px;
-}
+.albumtracks { width: 840px; padding-top: 6px; float: left; }
 
-.main-content p {
-	text-align: center;
-}
+.fa-music { margin-left: -15px; }
 
-.album {
-	width: 94%;
-	margin-top: 2%;
-	margin-left: 2%;
-	float: left;
-	background-color: #EDEDED;
-	padding: 1%;
-}
+.albumtracks ul { list-style-type: none; }
 
-.album:last-child {
-	margin-bottom: 2%;
-}
+.albumtracks ul li { width: 250px; float: left; padding: 2px 10px 10px 30px; }
 
-.albumart {
-	width: 280px;
-	height: 280px;
-	float: left;
-}
+.albumtracks i { width: 14px; font-size: 14px; padding-right: 6px; }
 
-.albumart img {
-	width: 280px;
-	height: 280px;
-}
+fieldset { border-color: #83e115; }
 
-.albumtracks {
-	width: 840px;
-	padding-top: 6px;
-	float: left;
-}
-
-.fa-music {
-	margin-left: -15px;
-}
-
-.albumtracks ul {
-	list-style-type: none;
-}
-
-.albumtracks ul li {
-	width: 350px;
-	float: left;
-	padding: 2px 10px 10px 30px;
-}
-
-.albumtracks i {
-	width: 14px;
-	font-size: 14px;
-	padding-right: 6px;
-}
+fieldset a { color: #151515; text-decoration: none; }
