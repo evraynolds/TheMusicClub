@@ -35,8 +35,6 @@ label {
 
 .input-box {
 	float: left;
-	min-height: 100px;
-	min-width: 200px;
 	clear: both;
 }
 
@@ -64,7 +62,11 @@ button {
 	border: none;
 	border-radius: 2px;
 	border-top: 2px solid;
+	clear: both;
 	color: #fff;
+	float: left;
+	margin-bottom: 2px;
+	min-width: 85px;
 	padding: 10px;
 }
 
@@ -78,14 +80,13 @@ button:hover {
 
 /* help hover box style */
 .help-info {
-	background: #4d4d4d;
-	border
+	background: #4a4a4a;
 	display: none;
 	float: right;
 	height: 20px;
 	margin-left: 10px;
 	min-width: 200px;
-	padding: 2px 6px 6px 6px;
+	padding: 0px 6px 6px 6px;
 }
 
 .help-info p {

@@ -1,0 +1,60 @@
+/* CSS Document 
+*
+* @Author: Niral Mehta
+* @Contributors: Rodrigo Queiroz
+* @last-update: 17 Mar 2015
+*
+*/
+
+fieldset {
+	border-color: #83e115;
+}
+
+legend {
+	color: #151515;
+	font-size: 20px;
+}
+
+label {
+	display: inline-block;
+	float: left;
+	width: 100%;
+	clear: both;
+	margin-bottom: 10px;
+}
+
+input {
+	display: inline-block;
+	float: left;
+	min-width: 230px;
+	clear: both;
+	margin-bottom: 10px;
+}
+
+select {
+	clear: both;
+	display: inline-block;
+	float: left;
+	min-width: 230px;
+}
+
+button {
+	background: #000;
+	border: none;
+	border-radius: 2px;
+	border-top: 2px solid;
+	clear: both;
+	color: #fff;
+	display: inline-block;
+	float: left;
+	margin-bottom: 2px;
+	margin-right: 6px;
+	min-width: 125px;
+	padding: 10px;
+}
+
+button:hover {
+	background: #151515;
+	border-top: 2px solid #83e115;
+	cursor: pointer;
+}

@@ -8,20 +8,15 @@
 
 h2 { text-align: center; }
 
-.rq, .nm, .cs, .er  { background-color: rgba(21,21,21,0.7); display: inline-block; height: 200px; margin: 5%; padding: 20px; width: 200px; }
-
-.main-content p { text-align: center; }
-
 .album { width: 94%; margin-top: 2%; margin-left: 2%; float: left; background-color: #ededed; padding: 1%; }
 
 .album:last-child { margin-bottom: 2%; }
 
 .albumart { width: 280px; height: 280px; float: left; }
 
-.albumart img { width: 280px; height: 280px;
-}
+.albumart img { width: 280px; height: 280px; }
 
-.albumtracks { width: 840px; padding-top: 6px; float: left; }
+.albumtracks { width: 580px; padding-top: 6px; float: left; }
 
 .fa-music { margin-left: -15px; }
 
@@ -31,6 +26,8 @@ h2 { text-align: center; }
 
 .albumtracks i { width: 14px; font-size: 14px; padding-right: 6px; }
 
-fieldset { border-color: #83e115; }
+fieldset { border-color: #83e115; margin-left: 2%; margin-right: 2%}
 
 fieldset a { color: #151515; text-decoration: none; }
+
+legend {font-size: 20px;}

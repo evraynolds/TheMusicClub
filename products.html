@@ -1,350 +1,162 @@
-<!doctype>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>Product Form</title>
-    <!--A bit of CSS to format the fieldsets-->
-    <style>
 
-      label { float:left; width: 20%; font-weight:bold; }
+<head>
 
-    </style>
-    <!--Here lies the JavaScript code-->
-    <script>
-/*First we have a collection of variables used throughout the code
-in various functions*/
-      var total = 0;
-      var subtotal=0;
-      var subParse= 0;
-      var counter=0;
-      var colorCounter = 255;
-      var endCounter = 255;
-      var productInfo = new Array();
-      var productQty = new Array();
-      var listOfProducts = new Array("Guitar", "Bass", "Drums", "Piano",
-      "small", "medium", "large", "xlarge", "8-track", "vinyl", "cassette",
-      "mp3Player")
-      var listOfPrice = new Array("30", "20", "50", "100", "5", "7", "10",
-      "12", "5", "20", "2", "10", "1");
-      var compareProduct = new Array();
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-/*Here is the first function which will be called everytime the quantity of
-products is augmented.*/
-      function order(instVal, musVal, shirtVal, frm){
+	<title>The Music Club - Store</title>
 
-/*These variables take the number in the number field for each product.*/
-        var instQty = frm.instrum.value;
-        var musQty = frm.music.value;
-        var shirtQty = frm.shirt.value;
+	<link rel="icon" href="./images/favicon.ico">
 
-/*These variables will be used later to estimate total product cost*/
-        var instrumTotal;
-        var musTotal;
-        var shirtTotal;
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> <!-- Font-Awesome -->
+	<link rel="stylesheet" href="./css/global.css"> <!-- Global stylesheet -->
+	<link rel="stylesheet" href="./css/products.css"> <!-- Custom stylesheet -->
 
-/*These varibles take in the number from the cost of each group of products*/
-        var instCost = document.getElementById("instCost");
-        var musCost = document.getElementById("musCost");
-        var shirtCost = document.getElementById("shirtCost");
-        var totalCost = document.getElementById("totalCost");
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> <!-- jQuery Library -->
+	<script src="./js/products.js"></script> <!-- Default JavaScript -->
 
-/*These Switch Statements will read the product chosen by the user and the
-quantity of each product and calculate the cost of the products in groups*/
-        switch(instVal){
-          case "Guitar":
-            instrumTotal = 30 * instQty
-            instCost.value =  instrumTotal
-            break;
-          case "Bass":
-            instrumTotal = 20 * instQty
-            instCost.value =  instrumTotal
-            break;
-          case "Drums":
-            instrumTotal = 50 * instQty
-            instCost.value =  instrumTotal
-            break;
-          case "Piano":
-            instrumTotal = 100 * instQty
-            instCost.value =  instrumTotal
-            break;
-          default: break;
-        }
+</head>
 
-        switch(musVal){
-          case "8-track":
-            musTotal = 5 * musQty
-            musCost.value =  musTotal
-            break;
-          case "vinyl":
-            musTotal = 20 * musQty
-            musCost.value =  musTotal
-            break;
-          case "cassette":
-            musTotal = 2 * musQty
-            musCost.value =  musTotal
-            break;
-          case "cd":
-            musTotal = 10 * musQty
-            musCost.value =  musTotal
-            break;
-          case "mp3Player":
-            musTotal = 1 * musQty
-            musCost.value =   musTotal
-            break;
-          default: break;
-        }
+<body>
 
-        switch(shirtVal){
-          case "small":
-            shirtTotal = 5 * shirtQty
-            shirtCost.value = shirtTotal
-            break;
-          case "medium":
-            shirtTotal = 7 * shirtQty
-            shirtCost.value = shirtTotal
-            break;
-          case "large":
-            shirtTotal = 10 * shirtQty
-            shirtCost.value = shirtTotal
-            break;
-          case "xlarge":
-            shirtTotal = 12 * shirtQty
-            shirtCost.value = shirtTotal
-            break;
-          default: break;
-        }
+	<div class="progress"> <!-- Progress bar -->
+		<div class="progress-bar"></div>
+	</div> <!-- END progress bar -->
 
-/*Here the combined total of all products is calculated and then displayed
-in the readOnly text field for total cost*/
-        total =  musTotal + instrumTotal + shirtTotal;
-        totalCost.value = total + subParse;
+	<header> <!-- Header -->
 
-/*These following If Statements will change the background color of the page
-depending on the total cost of the products*/
-        document.body.style.backgroundColor = "rgb(0, 0 , "+ total + ")";
+		<div class="logo">
+			<img class="cover" src="./images/logo-cover.png" alt="Cover">
+			<img class="cd" src="./images/logo.png" alt="CD">
+		</div>
 
-        if(total > 255 ){
-          var backGreen = (total - 254);
-          document.body.style.backgroundColor =
-          "rgb(0, "+ backGreen +"," + total + ")";
+		<h1>Music Club</h1>
+		<i class="fa fa-music"></i>
 
-          if(total > 510){
-            var backRed = (total - 509);
-            document.body.style.backgroundColor =
-            "rgb("+ backRed +","+ backGreen+"," + total+")";
+		<nav class="menu"> <!-- Navigation -->
+			<ul>
+				<li><a href="./main.html">Home</a></li>
+				<li><a href="./quiz.html">Quiz</a></li>
+				<li><a href="./products.html">Store</a></li>
+				<li><a href="./feedback.html">Feedback</a></li>
 
-            if(total > 765){
-              var backColor = (total - 764);
+				<li class="pull-right search"><a href="#"> <i class="fa fa-search"></i> </a></li>
+			</ul>
+		</nav> <!-- END of navigation -->
 
-              document.body.style.backgroundColor =
-              "rgb(255, 255,"+colorCounter+ ")";
-              colorCounter -= 10;
+	</header> <!-- END of header -->
 
-              if(colorCounter < 0 ){
+	<div class="search-bar"> <!-- Search bar -->
+		<form action="">
+			<input type="text" name="do-search" placeholder="Search for your favorite music...">
+			<a href="#"><i class="fa fa-close close"></i></a>
+		</form>
+	</div> <!-- END search bar -->
 
-                document.body.style.backgroundColor = "rgb(255,"+endCounter+",0)";
-                endCounter -= 10;
+	<div class="page-wrapper"> <!-- Page-wrap -->
 
-              }
-            }
-          }
+		<main class="main-content-full"> <!-- Main content -->
 
-        }
-      }
+			<article>
+				
+				<h2>Rock 'N' Roll Out With One of Our Suave Products</h2>
+
+				<form>
+
+					<fieldset>
+						<legend>Personal Details</legend>
+						<label>First Name</label>
+						<input name="firstName" type="text" placeholder="Type your first name" required/>
+						<label>Last Name</label>
+						<input type="text" placeholder="Type your last name" required/>
+						<label>e-mail</label>
+						<input type="email" placeholder="Type your E-Mail address" autofocus required/>
+					</fieldset>
+
+					<fieldset>
+						<legend>Our Rockin' Products</legend>
+						<label>T-Shirt</label>
+						<select name="tShirt">
+							<option value="small">Small</option>
+							<option value="medium">Medium</option>
+							<option value="large">Large</option>
+							<option value="xlarge">X-Large</option>
+						</select>
+
+						<input id="shirtQty" type="number" min="0" size="5" name="shirt"
+						onChange="order(instrument.value,recordedMusic.value,
+						tShirt.value, this.form)"/>
+						
+						<input id="shirtCost" type="text" size="10" readonly="readonly">
+
+						<label>Recorded Music</label>
+						<select name="recordedMusic">
+							<option value="8-track">8-Track</option>
+							<option value="vinyl">Vinyl</option>
+							<option value="cassette">Cassette</option>
+							<option value="cd">CD</option>
+							<option value="mp3Player">MP3 Player</option>
+						</select>
+
+						<input id="musicQty" type="number" min="0" size="4" name="music"
+						onChange="order(instrument.value,recordedMusic.value,
+						tShirt.value, this.form)"/>
+						<input id="musCost" type="text" size="10" readonly="readonly">
+						
+						<label>Instrument</label>
+						<select name="instrument">
+							<option name="guitar" value="Guitar">Guitar</option>
+							<option name="bass" value="Bass">Bass</option>
+							<option name="drums" value="Drums">Drum set</option>
+							<option name="piano" value="Piano">Piano</option>
+						</select>
+
+						<input id="instrumentQty" min="0" type="number" size="5"
+						name="instrum" onChange="order(instrument.value,
+						recordedMusic.value, tShirt.value, this.form)"/>
+						<input id="instCost" type="text" readonly="readonly" size="10" />
 
 
-/*Here is the second function which stores all selected products in arrays
-so that the user can select even more products from the text fileds if he/she
-chooses*/
-      function addProducts(instEl, musEl, shEl)
-      {
+						<label>Total Cost</label>
+						<input id="totalCost" readonly="readonly"/>
+											
+						<button value="Add To Basket"
+						onClick="addProducts(instrument.value, recordedMusic.value,
+						tShirt.value)">Add To Basket</button>
 
-        var iQty = document.getElementById("instrumentQty").value;
-        var mQty = document.getElementById("musicQty").value;
-        var sQty = document.getElementById("shirtQty").value;
+						<button value="Place Order"
+						onClick="placeOrder(this.form)">Place Order</button>
+						<button value="Reset" onClick="reset()">Reset</button>
+					</fieldset>
 
-        if( iQty != null && iQty != 0)
-          {
-          productQty[counter] = iQty;
-          compareProduct[counter] = instEl;
-          if(productQty[counter] > 1){
-           productInfo[counter] = instEl +"s";
-         }
-         else{
-           productInfo[counter] = instEl;
-         }
-         counter++;
-        }
+					<fieldset>
+						<legend>Shipping Address</legend>
+						<label>Street</label>
+						<input type="type" placeholder="Street"/>
+						<label>City</label>
+						<input type="text" placeholder="City"/>
+						<label>Area Code</label>
+						<input type="text" placeholder="Area Code"/>
+						<label>Country</label>
+						<input type="text" placeholder="Country"/>
+						<label>Telephone No.</label>
+						<input type="text" placeholder="Telephone Number"/>
+					</fieldset>
 
-        if( mQty != null && mQty != 0)
-          {
-          productQty[counter] = mQty;
-          compareProduct[counter] = musEl;
-          if(productQty[counter] > 1){
-            productInfo[counter] = musEl +"s";
-          }
-          else{
-            productInfo[counter] = musEl;
-          }
-          counter++;
-        }
+				</form>
 
-        if( sQty != null && sQty != 0)
-          {
-          productQty[counter] = sQty;
-          compareProduct[counter] = shEl;
-          if(productQty[counter] > 1)
-          {
-            productInfo[counter] = shEl + " shirts";
-          }
-          else{
-            productInfo[counter] = shEl + " shirt";
-          }
-          counter++;
-        }
+			</article>
 
-        document.getElementById("instrumentQty").value = null;
-        document.getElementById("instCost").value = null;
-        document.getElementById("musicQty").value = null;
-        document.getElementById("musCost").value = null;
-        document.getElementById("shirtQty").value = null;
-        document.getElementById("shirtCost").value = null;
+		</main> <!-- END main content -->
 
-        subtotal = document.getElementById("totalCost").value;
-        subParse = parseInt(subtotal);
-        totalCost.value = subParse;
-        subparse = 0;
-      }
+	</div> <!-- END of page-wrap -->
 
+	<footer> <!-- Footer -->
+		<p class="copy">&copy; 2015 - Music Club Ltd.
+		</footer> <!-- end of html5 footer -->
 
-      function placeOrder(frm){
+</body>
 
-        var total = document.getElementById("totalCost").value;
-        var firstName = frm.firstName.value
-        var list = "";
-
-        for(i = 0; i < productInfo.length; i++){
-          list = list + " " + productQty[i] + " " + productInfo[i] + " ";
-
-          for(k = 0; k < listOfProducts.length; k++){
-            if(compareProduct[i] === listOfProducts[k])
-            list = list + " worth  \xA3" + listOfPrice[k];
-          }
-
-          if(productQty[i] > 1)
-          {
-             list = list + " each ";
-          }
-          list = list + "\n";
-        }
-
-        if(total == null || total == 0){
-          alert("Please order something before proceeding.")
-        }
-        else if(productQty == null || productQty == 0){
-          alert("Please press the 'Add to Basket' button before proceeding.")
-        }
-        else if(firstName == null || firstName == 0){
-          alert("Please enter your first name.")
-        }
-        else {alert("Dear " + firstName + ", you have ordered \n"
-        + list + " for a total of \xA3" + total );
-        }
-      }
-
-      function reset(){
-        document.getElementById("totalCost").value = null;
-
-      }
-    </script>
-  </head>
-  <body>
-
-    <h1><center><b>Rock 'N' Roll Out With One of Our Suave Products
-    </b></center></h1>
-    <form>
-
-      <fieldset>
-        <legend><b>Personal Details</b></legend>
-          <p><label>First Name</label>
-            <input name="firstName" type="text" placeholder="Type your first name" required/></p>
-          <p><label>Last Name</label>
-            <input type="text" placeholder="Type your last name" required/></p>
-          <p><label>E-MAIL</label>
-            <input type="email" placeholder="Type your E-Mail address" autofocus required/></p>
-      </fieldset>
-
-      <fieldset>
-        <legend><b>Our Rockin' Products</b></legend>
-          <p><label>T-Shirt</label>
-            <select name="tShirt">
-              <option value="small">Small</option>
-              <option value="medium">Medium</option>
-              <option value="large">Large</option>
-              <option value="xlarge">X-Large</option>
-            </select>
-
-            <input id="shirtQty" type="number" min="0" size="5" name="shirt"
-             onChange="order(instrument.value,recordedMusic.value,
-             tShirt.value, this.form)"/>
-             &pound;<input id="shirtCost" type="text" size="10" readonly="readonly"></p>
-
-
-          <p><label>Recorded Music</label>
-             <select name="recordedMusic">
-               <option value="8-track">8-Track</option>
-               <option value="vinyl">Vinyl</option>
-               <option value="cassette">Cassette</option>
-               <option value="cd">CD</option>
-               <option value="mp3Player">MP3 Player</option>
-             </select>
-
-             <input id="musicQty" type="number" min="0" size="4" name="music"
-              onChange="order(instrument.value,recordedMusic.value,
-              tShirt.value, this.form)"/>
-              &pound;<input id="musCost" type="text" size="10" readonly="readonly"></p>
-
-
-          <p><label>Instrument</label>
-            <select name="instrument">
-              <option name="guitar" value="Guitar">Guitar</option>
-              <option name="bass" value="Bass">Bass</option>
-              <option name="drums" value="Drums">Drum set</option>
-              <option name="piano" value="Piano">Piano</option>
-            </select>
-
-            <input id="instrumentQty" min="0" type="number" size="5"
-               name="instrum" onChange="order(instrument.value,
-               recordedMusic.value, tShirt.value, this.form)"/>
-               &pound;<input id="instCost" type="text" readonly="readonly" size="10" /></p>
-
-             <label>Total Cost</label>
-               &pound;<input id="totalCost" readonly="readonly"/>
-              <input type="button" value="Add To Basket"
-                onClick="addProducts(instrument.value, recordedMusic.value,
-                 tShirt.value)"/>
-
-             <p><input type="submit" value="Place Order"
-              onClick="placeOrder(this.form)"/>
-             <input type="reset" value="Reset" onClick="reset()"/></p>
-      </fieldset>
-
-      <fieldset>
-        <legend><b>Shipping Address</b></legend>
-          <p><label>Street</label>
-          <input type="type" placeholder="Street"/></p>
-          <p><label>City</label>
-          <input type="text" placeholder="City"/></p>
-          <p><label>Area Code</label>
-          <input type="text" placeholder="Area Code"/></p>
-          <p><label>Country</label>
-            <input type="text" placeholder="Country"/></p>
-          <p><label>Telephone No.</label>
-          <input type="text" placeholder="Telephone Number"/></p>
-      </fieldset>
-
-    </form>
-    <hr>
-    <p>Evan O. Raynolds</p>
-    <address><a href="mailto:w1483905@my.westminster.ac.uk">w1483905@my.westminster.ac.uk</a></address>
-  </body>
 </html>
