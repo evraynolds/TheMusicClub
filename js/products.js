@@ -113,6 +113,7 @@ totalCost.value = total + subParse;
 
 /*These following If Statements will change the background color of the page
 depending on the total cost of the products*/
+document.body.style.backgroundImage = "none";
 document.body.style.backgroundColor = "rgb(0, 0 , "+ total + ")";
 
 if(total > 255 ){
