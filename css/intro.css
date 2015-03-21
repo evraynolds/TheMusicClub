@@ -64,8 +64,7 @@ body { background-image: none; }
 .blink-one { animation: blink 2s steps(5, start) infinite; -webkit-animation: blink 2s steps(5, start) infinite; margin-left: 4px; }
 .blink-two { animation: blink 2s steps(10, start) infinite; -webkit-animation: blink 2s steps(10, start) infinite; margin-left: 4px; }
 .blink-three { animation: blink 2s steps(15, start) infinite; -webkit-animation: blink 2s steps(15, start) infinite; margin-left: 4px; }
-.editor { color: #575757; font-size: 15px; font-weight: 300; width: 100%; text-align: center; float: left; margin-top: 150px; }
-.editor a { color: #8c8c8c; text-decoration: none; }
+.editor { margin-top: 150px; }
 
 /* spin */
 @-webkit-keyframes spin {

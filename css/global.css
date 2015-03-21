@@ -219,3 +219,9 @@ aside .info-further { position: relative; width: 100%; height: 100px; padding: 0
  */
 footer { width: 100%; height: 100px; background-color: #151515; margin-top: 15px; float: left; clear: both; }
 footer .copy { color: #ffffff; font-weight: 300; font-size: 12px; text-align: center; }
+
+/*
+ *    Editor
+ */
+.editor { color: #575757; font-size: 13px; font-weight: 300; width: 100%; text-align: center; float: left; margin-top: 4px; }
+.editor a { color: #8c8c8c; text-decoration: none; }
