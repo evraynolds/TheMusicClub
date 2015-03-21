@@ -1,0 +1,27 @@
+#cv header, #cv footer { background: none; }
+#cv { width: 100%; min-height: 50px; float: left; }
+#cv h2 { color: #151515; font-weight: 700; margin-bottom: 8px; border-bottom: 1px solid #E8E8E8; padding-bottom: 8px; }
+#cv h3 { padding-bottom: 8px; }
+#cv ul { list-style-type: none; padding-left: 8px; }
+#cv ul li { font-weight: 300; padding-bottom: 5px; }
+#cv p { font-weight: 300; line-height: 24px; padding: 0 0 8px 8px; margin: 0; }
+#cv a { text-decoration: none; color: #494949; }
+#cv section { width: 95%; float: left; padding: 6px; }
+#cv .job { width: 100%; float: left; margin-bottom: 18px; }
+#cv .job .company h3 { min-width: 50px; float: left; display: inline-block; color: rgb(74, 74, 74); }
+#cv .job .company p { min-width: 50px; float: right; display: inline-block; }
+#cv .job .info { width: 100%; float: left; }
+#cv .job .info h4 { width: 100%; float: left; display: inline-block; padding-bottom: 12px; color: rgb(110, 110, 110); }
+
+#cv .course { width: 100%; float: left; margin-bottom: 18px; }
+#cv .course .entity h3 { min-width: 50px; float: left; display: inline-block; color: rgb(74, 74, 74); }
+#cv .course .entity p { min-width: 50px; float: right; display: inline-block; }
+#cv .course .info { width: 100%; float: left; }
+#cv .course .info h4 { width: 100%; float: left; display: inline-block; padding-bottom: 12px; color: rgb(110, 110, 110); }
+
+#cv .summary { width: 95%; float: left; display: table; }
+#cv .summary a span { display: none; }
+#cv .summary a:hover span { display: inline-block; }
+#cv #personal-info p { padding-bottom: 0; }
+#cv #personal-info img { width: 120px; height: 120px; float: right;   border: 1px solid rgb(56, 56, 56); border-radius: 1px; }
+#key-skills ul { list-style-type: none; }
