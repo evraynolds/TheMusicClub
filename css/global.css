@@ -192,7 +192,7 @@ header .fa-music { color: #ffffff; font-size: 16px; position: absolute; margin-t
  */
 aside .team .member { width: 100%; background-color: #232323; float: left; margin-left: -12px; margin-right: -12px; color: #ffffff; padding: 12px; }
 aside .team .member:first-child { margin-top: -12px; }
-aside .team .member:hover { cursor: pointer; background-color: #2c2c2c; }
+/*aside .team .member:hover { cursor: pointer; background-color: #2c2c2c; }*/
 aside .team .pic { width: 100px; height: 100px; float: left; margin-left: 10px; }
 aside .team .pic img { width: 100px; height: 100px; border-radius: 50%; border: 1px solid rgba(159, 230, 18, 0.5); }
 aside .team .info { width: auto; float: left; }
